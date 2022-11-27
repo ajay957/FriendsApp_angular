@@ -4,7 +4,7 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
                 <h1 class="text-center"><u>View Friends</u></h1>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <table class="table">
                         <thead>
                           <tr>
@@ -17,7 +17,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr *ng="let i of data">
+                          <tr *ngFor="let i of data">
                             <th>{{i._id}}</th>
                             <td>{{i.name}}</td>
                             <td>{{i.friendName}}</td>
