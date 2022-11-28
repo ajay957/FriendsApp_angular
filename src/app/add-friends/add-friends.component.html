@@ -6,22 +6,22 @@
                 <h1 class="text-center"><u>Add Friends</u></h1>
                 <div class="col col-12 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Your sweet name Plz..</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Name of Friend</label>
-                    <input type="text" class="form-control">
+                    <input name="friendName" [(ngModel)]="friendName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Discribe your friend</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="friendNickName" [(ngModel)]="friendNickName" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Nickname of Friend</label>
-                    <input type="text" class="form-control">
+                    <input name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a href=""><button class="btn btn-primary">Submit</button></a>
+                    <button (click)="readValue()" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
